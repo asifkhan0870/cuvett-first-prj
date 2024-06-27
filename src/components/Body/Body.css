@@ -1,0 +1,89 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  border-radius: 100px;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: -45px; /* Adjust as needed */
+  left: 0px; /* Adjust as needed */
+  width: 400px; /* Adjust as needed */
+  height: 400px; /* Adjust as needed */
+  background-color: #fff; /* Adjust to match background or other color */
+  border-radius: 34px 1000px 10000px 120px;
+}
+
+.box::before {
+  position: absolute;
+  bottom: -45px;
+  left: 0px;
+  border-radius: 34px 1000px 10000px 120px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.first {
+  margin-left: 40px;
+
+  z-index: 1;
+}
+
+.first > img {
+  height: 250px;
+  width: 250px;
+}
+
+.first .btn {
+  margin-top: 420px;
+  border-radius: 40px;
+  padding: 20px;
+}
+
+.second {
+  margin-top: 200px;
+  color: white;
+  column-gap: 2rem;
+}
+
+.second .second-f {
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  margin-left: 120px;
+}
+
+.second .second-s {
+  font-size: 4rem;
+  font: bold;
+}
+
+.second-s {
+  display: flex;
+  flex-direction: column;
+}
+
+.third > img {
+  height: 700px;
+  width: 500px;
+}
+
+.fourth {
+  z-index: 1;
+}
+
+.fourth .video-logo {
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+}

@@ -1,0 +1,13 @@
+.h-container {
+  gap: 30rem;
+}
+
+.h-container > a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.nav-text {
+  gap: 1rem;
+}
